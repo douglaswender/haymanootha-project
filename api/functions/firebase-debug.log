@@ -1,0 +1,80 @@
+[debug] [2022-05-06T13:35:08.394Z] ----------------------------------------------------------------------
+[debug] [2022-05-06T13:35:08.397Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dglsw\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start --only functions
+[debug] [2022-05-06T13:35:08.397Z] CLI Version:   10.8.0
+[debug] [2022-05-06T13:35:08.397Z] Platform:      win32
+[debug] [2022-05-06T13:35:08.397Z] Node Version:  v16.14.2
+[debug] [2022-05-06T13:35:08.398Z] Time:          Fri May 06 2022 09:35:08 GMT-0400 (Horário Padrão do Amazonas)
+[debug] [2022-05-06T13:35:08.398Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-05-06T13:35:08.471Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-05-06T13:35:08.471Z] > authorizing via signed-in user (dglswender@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-05-06T13:35:08.504Z] [hub] writing locator at C:\Users\dglsw\AppData\Local\Temp\hub-ibn-opo.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-05-06T13:35:08.787Z] defaultcredentials: writing to file C:\Users\dglsw\AppData\Roaming\firebase\dglswender_gmail_com_application_default_credentials.json
+[debug] [2022-05-06T13:35:08.788Z] Setting GAC to C:\Users\dglsw\AppData\Roaming\firebase\dglswender_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\dglsw\\AppData\\Roaming\\firebase\\dglswender_gmail_com_application_default_credentials.json"}}
+[debug] [2022-05-06T13:35:08.790Z] > refreshing access token with scopes: []
+[debug] [2022-05-06T13:35:08.790Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-05-06T13:35:09.130Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Fri, 06 May 2022 13:35:09 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-05-06T13:35:09.145Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/ibn-opo/adminSdkConfig [none]
+[debug] [2022-05-06T13:35:10.523Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/ibn-opo/adminSdkConfig 200
+[debug] [2022-05-06T13:35:10.523Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/ibn-opo/adminSdkConfig {"projectId":"ibn-opo","storageBucket":"ibn-opo.appspot.com"}
+[debug] [2022-05-06T13:35:10.540Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-05-06T13:35:10.540Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-05-06T13:35:10.540Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\dglsw\\.cache\\firebase\\emulators\\ui-v1.6.6\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\dglsw\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.6.6\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-05-06T13:35:10.679Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "D:\dev\public\ibn-opo\api\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\dev\\public\\ibn-opo\\api\\functions\" for Cloud Functions..."}}
+[debug] [2022-05-06T13:35:10.809Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2022-05-06T13:35:13.707Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "mercadopago": "^1.5.12"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-05-06T13:35:13.708Z] Building nodejs source
+[debug] [2022-05-06T13:35:13.708Z] Analyzing nodejs backend spec
+[info] +  functions[us-central1-app]: http function initialized (http://localhost:5001/ibn-opo/us-central1/app). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/ibn-opo/us-central1/app)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
